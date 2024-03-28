@@ -10,10 +10,15 @@ class D1GramsToPounds extends ConsoleProgram {
   */
   
   public void run() {
+
+    double dblPounds;
     //output table header
     System.out.printf("%5s, %10s, %n", "grams", "pounds");
     System.out.println ("---------------");
 
-    
+    for (int intGrams = 10; intGrams <= 100; intGrams += 10){
+    dblPounds = intGrams * 10;
+    System.out.printf("%5d %10.2f %n", intGrams, dblPounds);
+    }
   }
 }
