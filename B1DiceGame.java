@@ -10,6 +10,10 @@ class B1DiceGame extends ConsoleProgram {
   
   public void run() {
     int rolls = 100;
+    Random rand = new Random();
+
+
+    for (int i = 0; i < rolls; i++);
     int dieOne;
     int dieTwo;
     int total = dieOne + dieTwo;
