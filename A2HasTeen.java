@@ -7,9 +7,9 @@ class A2HasTeen extends ConsoleProgram {
   */
   
   public void run() {
-    int firstAge = readInt ("Input the first value: ");
-    int secondAge = readInt ("Input the second value: ");
-    int thirdAge = readInt ("Input the third value: ");
+    int firstAge = readInt ("Input the first age: ");
+    int secondAge = readInt ("Input the second age: ");
+    int thirdAge = readInt ("Input the third age: ");
     
     if (firstAge >= 13 && firstAge <= 19 || secondAge >= 13 && secondAge <= 19 || thirdAge >=13 && secondAge <=19)
     {
