@@ -1,3 +1,5 @@
+import java.util.Random;
+
 class B1DiceGame extends ConsoleProgram {
 
   /**
@@ -15,7 +17,6 @@ class B1DiceGame extends ConsoleProgram {
     // Declare variables
     int dieOne;
     int dieTwo;
-    int total = dieOne + dieTwo;
 
     for (int counter = 0; counter < rolls; counter++);
     {
@@ -23,11 +24,11 @@ class B1DiceGame extends ConsoleProgram {
       dieTwo = roll.nextInt (1, 6);
     }
 
-    if (total == 2) {
+    if (dieOne + dieTwo == 2) {
       System.out.println ("Snake eyes!");
     }
 
-    if (total == 7) {
+    if (dieOne + dieTwo == 7) {
       System.out.println ("Lucky seven!");
     }
   }
