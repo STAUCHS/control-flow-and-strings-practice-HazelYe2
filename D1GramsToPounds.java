@@ -16,6 +16,7 @@ class D1GramsToPounds extends ConsoleProgram {
     System.out.printf("%5s, %10s, %n", "grams", "pounds");
     System.out.println ("---------------");
 
+    // convert grams to pounds
     for (int intGrams = 10; intGrams <= 100; intGrams += 10){
     dblPounds = intGrams * 10;
     System.out.printf("%5d %10.2f %n", intGrams, dblPounds);
