@@ -13,13 +13,13 @@ class D1GramsToPounds extends ConsoleProgram {
 
     double dblPounds;
     //output table header
-    System.out.printf("%5s, %10s, %n", "grams", "pounds");
-    System.out.println ("---------------");
+    System.out.printf("%6s, %10s, %n", "grams", "pounds");
+    System.out.println ("----------------------");
 
     // convert grams to pounds
-    for (int intGrams = 10; intGrams <= 100; intGrams += 10){
-    dblPounds = intGrams * 10;
-    System.out.printf("%5d %10.2f %n", intGrams, dblPounds);
+    for (int intGrams = 100; intGrams <= 1000; intGrams += 100){
+    dblPounds = intGrams * 0.00220462;
+    System.out.printf("%6d %10.4f %n", intGrams, dblPounds);
     }
   }
 }
